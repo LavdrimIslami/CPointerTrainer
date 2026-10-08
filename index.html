@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C Pointer Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>C Pointer Trainer</h1>
+  <div id="diff-row">
+    <label for="diff-select">Difficulty:</label>
+    <select id="diff-select">
+      <option value="">Any</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+      <option value="Very Hard">Very Hard</option>
+    </select>
+  </div>
+  <div id="meta"></div>
+  <pre id="code-box"></pre>
+  <label for="answer">Predict the output:</label>
+  <input type="text" id="answer" autocomplete="off" spellcheck="false">
+  <p id="hint">Type the output exactly as <code>printf</code> would print it. Leading/trailing whitespace is ignored.</p>
+  <div id="controls">
+    <button id="submit-btn">Submit</button>
+    <button id="retry-btn" hidden>New Problem</button>
+    <button id="viz-btn">Visualize</button>
+  </div>
+  <div id="feedback" role="status"></div>
+
+  <div id="viz-section" hidden>
+    <hr>
+    <div id="viz-nav">
+      <button id="viz-prev">&#9664; Prev</button>
+      <span id="viz-step-label"></span>
+      <button id="viz-next">Next &#9654;</button>
+    </div>
+    <div id="viz-line"></div>
+    <div id="viz"></div>
+  </div>
+
+  <script src="problems.js"></script>
+  <script src="visualizer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

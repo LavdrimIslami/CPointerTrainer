@@ -1,0 +1,124 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: monospace;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 16px;
+  background: #fff;
+  color: #111;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+#diff-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#diff-row label { font-weight: bold; }
+
+#diff-select {
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 4px 6px;
+  border: 1px solid #999;
+}
+
+#meta {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 16px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #999;
+}
+
+#hint {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 4px 0 12px;
+}
+
+#hint code {
+  background: #eee;
+  padding: 0 3px;
+}
+
+#controls {
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 8px;
+  border: 1px solid #999;
+  background: #f0f0f0;
+}
+
+button:hover:not(:disabled) { background: #e0e0e0; }
+button:disabled { opacity: 0.45; cursor: default; }
+
+#feedback {
+  font-weight: bold;
+  min-height: 1.4em;
+}
+
+.correct   { color: #1a7a1a; }
+.incorrect { color: #b00000; }
+
+/* ── Visualization section ── */
+#viz-section { margin-top: 16px; }
+#viz-section hr { border: none; border-top: 1px solid #ddd; margin-bottom: 14px; }
+
+#viz-nav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+#viz-nav button { padding: 5px 14px; font-size: 0.9rem; }
+
+#viz-step-label {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+#viz-line {
+  font-size: 0.85rem;
+  color: #333;
+  background: #f0f4ff;
+  border-left: 3px solid #0055cc;
+  padding: 4px 8px;
+  margin-bottom: 12px;
+}
+
+#viz { overflow-x: auto; }
+#viz svg { display: block; }
